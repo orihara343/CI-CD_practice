@@ -13,7 +13,7 @@ def signup():
 
 @app.route("/listAccounts", methods = ["GET"])
 def listAccount():
-    response = requests.get("http://backend_host:5001/listAccounts")
+    response = requests.get("http://backend_host:5002/listAccounts")
 
     return render_template("listAccount.html", user = response.text)
 
