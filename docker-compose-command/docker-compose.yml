@@ -18,7 +18,7 @@ services: # services: web, redis
     volumes:
       - /home/edward/CI-CD_practice/docker-compose-command/logs:/app/logs
   db:
-    container_name: db_host2
+    container_name: db_host
     image: postgres
     ports:
       - "5432:5432" # port forward
